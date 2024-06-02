@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+    color: #030303;
+    /* height: 100vh; */
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #030303;
+}
+li{
+    list-style: none;
+}
+.navMain {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+.megaMenu {
+    display: flex;
+}
+.logo h4 {
+    font-size: 2rem;
+    
+}
+.megaMenu a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #030303;
+}
+.dataMenu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formContainer {
+    border:1px solid #f4f2f4;
+    border-radius: 15px;
+    padding: 0.1rem;
+    border: 1px solid black;
+}
+.formContainer > form > input , .formContainer > form > button{
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hamburg{
+    display: none;
+}
+/* body content */
+main{
+    max-width: 80%;
+    margin: auto;
+}
+.mainBanner{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.bannerDescription{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.bannerHeading{
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;      
+}
+.bannerText{
+    font-size: 1.25rem;
+    margin-bottom: 1.8rem;
+}
+.shopbutton{
+    width: 25%;
+    padding: 1rem;
+    background-color: #030303;
+    color: #fff;
+    cursor: pointer;    
+}
+.bannerImage{
+    width: 45%;
+    height: 50vh;
+}
+.imgBlock,.MobileimgBlock {
+    /* width: 100%;  */
+    height: 50vh; 
+    background-color: #f0f0f0;
+    background-image: url('/Assets/plants-homebanner.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+.MobileimgBlock{
+    display: none;
+}
+/* category styling */
+.categoryHeading{
+    font-size: 2.25rem;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#Jungle-plants{
+    background-image: url('/Assets/home-card-one.jpg');
+}
+#Outdoor-plants{
+    background-image: url('/Assets/home-card-two.jpg');
+}
+#Bedroom-plants{
+    background-image: url('/Assets/home-card-three.jpg');
+}
+#Indoor-plants{
+    background-image: url('/Assets/home-card-four.jpg');
+}
+.CategoryImage{
+    /* width: 17.25rem;  */
+    height: 24.625rem; 
+    background-size: cover; 
+    background-position: center; 
+    margin-bottom: 0.8rem;
+}
+.category-heading{
+    font-size: 1.5rem;
+}
+.category-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+.card{
+    /* flex-grow: 1; */
+    margin-bottom: 2rem;
+}
+/* quote */
+.pagequote{
+    text-align: center;
+    align-self: center;
+    font-size: 2.25rem;
+    padding: 2rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+
+}
+.quote{
+    width: 75%;
+}
+/* featured styles */
+
+.featured-details-section{
+    display: flex;
+    justify-content: space-between;
+}
+.featured-text-card{
+    width: 20%;
+    padding: 20px;
+}
+.featuredHeading{
+    font-size: 2.25rem;
+    
+}
+.featuredNote{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 0.825rem;
+    
+}
+.featured-Description{
+    margin-bottom: 0.5rem;
+}
+.featured-text-card button{
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    border: 1px solid black;
+}
+#plant1{
+    background-image: url('/Assets/home-feature-one.jpg');
+}
+#plant2{
+    background-image: url('/Assets/home-feature-two.jpg');
+}
+#plant3{
+    background-image: url('/Assets/home-feature-three.jpg');
+}
+.plant-img{
+    width: 17.25rem; 
+    height: 24.625rem; 
+    background-size: cover; 
+    background-position: center; 
+    margin-bottom: 0.8rem;
+}
+.plant-name{
+    color: #c1c1c1;
+    font-size: 14px;
+}
+.featured-cards-section{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    padding: 0.925rem;
+}
+.featured-card {
+    padding: 20px;
+    text-align: start;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: height 0.3s ease;
+}
+.featured-card span{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.plant-price{
+    font-size: 1.5rem;
+}
+.featured-card:nth-child(even) .plant-img:first-child{
+    height: 22.875rem;
+}
+.featured-card:nth-child(odd) .plant-img:first-child{
+    height: 24.625rem;
+}
+/* edition card */
+.edition-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    padding: 1rem;
+}
+#edition-card-one{
+    background-image: url('/Assets/plants-homebanner.jpg');
+}
+#edition-card-two{
+    background-image: url('Assets/home-card-four.jpg');
+}
+/* .edition-card{
+    width: 36.75rem; 
+    height: 18.188rem; 
+} */
+.edition-card{
+    width: 47%;
+    position: relative;
+}
+.edition-img{
+    
+    height: 18.188rem; 
+    background-size: cover; 
+    background-position: center; 
+    margin-bottom: 0.8rem;
+}
+.edition-text p {
+    font-size: 1.5rem;
+}
+.edition-text span {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    color: #c1c1c1;
+}
+.edition-author{
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 10rem;
+    padding: 0.5rem 1rem; 
+    
+}
+.edition-author span{
+    display: block;
+}
+.edition-author span:nth-child(1){
+    font-size: 0.75rem;
+    color: #c1c1c1;
+}
+.edition-author span:nth-child(2){
+    font-size: 1rem;
+    
+}
+/* news letter */
+
+.newsLetterContainer{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.letterOffer{
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-wrap: wrap;
+    text-align: center;
+}
+.letterOffer span:nth-child(1),.letterOffer span:nth-child(2){
+    display: block;
+}
+.SubscribeForm {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 32rem;
+
+}
+.SubscribeForm input,.SubscribeForm button{
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+.SubscribeForm input{
+    width: 75%;
+    color: #030303;
+    background-color: #eee;
+}
+.SubscribeForm button{
+    width: 22%;
+    background-color: #030303;
+    color: #fff;
+}
+/* footer */
+footer{
+    background-color: #eee;
+}
+.footerlogo{
+    padding: 0.2rem;
+}
+
+.footerWrapper{
+    width: 80%;
+    margin:5rem auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.footerContent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.footerWrapper span{
+    color: #c1c1c1;
+    font-size: 1rem;
+}
+.footerWrapper li{
+    color: #030303;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.footerContent div{
+    padding: 0 1rem;
+}
+.Staticcurrency{
+    padding: 1.2rem 1rem;
+}
+.Staticcurrency span{
+    color: #030303;
+    background-color: #c1c1c1;
+    padding: 0.3rem 2rem;
+}
+
+@media only screen and (min-width: 150px) and (max-width:600px){
+    .navMain,.bannerDescription,.MobilebannerImage,.quote,.footerContent{
+        width: 100%;
+    }
+    .megaMenu , .dataMenu{
+        display: none;
+    }
+
+    .bannerHeading{
+        font-size: 1.5rem;
+    }
+    .bannerText{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .shopbutton{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .bannerImage{
+        width: 0;
+        height: 0;
+    }
+
+    .MobileimgBlock,.hamburg{
+        display: block;
+    }
+    .hamburg span{
+        font-size: 3rem;
+    }
+    .imgBlock{
+        display: none;
+    }
+    main{
+        max-width: 100% !important;
+    }
+    .featured-details-section,.edition-container{
+        flex-direction: column;
+    }
+    .featured-text-card,.featured-cards-section,.edition-card,.SubscribeForm ,.footerWrapper{
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+    }
+    .featured-details-section{
+        margin: 2rem 0;
+    }
+    .edition-text p,.letterOffer{
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    .footerlogo{
+        padding: 1rem;
+    }
+    .footerWrapper{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .SubscribeForm input,.SubscribeForm button{
+        width: 60%;
+    }
+    .SubscribeForm button{
+        width: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width:970px){
+
+    .megaMenu , .dataMenu{
+        display: none;
+    }
+    .hamburg{
+        display: block;
+    }
+    .hamburg span{
+        font-size: 3rem;
+    }
+    .bannerHeading{
+        font-size: 2.25rem;
+    }
+    .shopbutton{
+        width: 50%;
+    }
+    .featured-details-section{
+        flex-direction: column;
+    }
+    .featured-text-card,.featured-cards-section{
+        width:100%;
+    }
+    .plant-img{
+        height: 90vh !important;
+        width: 100% !important;
+    }
+    .featured-cards-section{
+        gap: 3rem;
+        
+    }
+    .footerlogo h4{
+        padding: 0 1rem;
+    }
+    .footerContent{
+        width:100%;
+    }
+
+}
+
