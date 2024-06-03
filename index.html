@@ -20,8 +20,8 @@
             </div>
             <div class="dataMenu">
                 <div class="formContainer">
-                    <form action="">
-                        <input type="search" name="" id="">
+                    <form action="#" id="searchForm">
+                        <input type="search" placeholder="Search...">
                         <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
@@ -61,7 +61,7 @@
             <div class="category-cards">
                 <div class="card">
                     <div class="CategoryImage" id="Jungle-plants"></div>
-                    <span class="category-heading">Jungle plans</span>
+                    <span class="category-heading">Jungle plants</span>
                 </div>
                 <div class="card">
                     <div class="CategoryImage" id="Outdoor-plants"></div>
@@ -92,17 +92,17 @@
             <div class="featured-cards-section">
                 <div class="featured-card">
                     <div class="plant-img" id="plant1"></div>
-                    <span class="plant-name">Plant-1</span>
+                    <span class="plant-name">Rubber Plant</span>
                     <span class="plant-price">&#8377;199</span>
                 </div>
                 <div class="featured-card">
                     <div class="plant-img" id="plant2"></div>
-                    <span class="plant-name">plant-2</span>
+                    <span class="plant-name">Jade Plant</span>
                     <span class="plant-price">&#8377;145</span>
                 </div>
                 <div class="featured-card">
                     <div class="plant-img" id="plant3"></div>
-                    <span class="plant-name">plant-3</span>
+                    <span class="plant-name">ZZ Plant</span>
                     <span class="plant-price">&#8377;189</span>
                 </div>
             </div>
@@ -133,8 +133,8 @@
         </div>
         <div class="newsLetterContainer" id="contact">
             <p class="letterOffer"><span>Get 15% off your next order,</span><span> Subscribe to our Newsletter</span></p>
-            <form class="SubscribeForm" action="#">
-                <input type="text" name="email" placeholder="Enter you email here">
+            <form class="SubscribeForm" action="#" id="subscribeForm">
+                <input type="text" name="email" placeholder="Enter your email here">
                 <button type="button">Subscribe</button>
             </form>
         </div>
@@ -162,7 +162,7 @@
                         <li><a href="#">Return Policy</a></li>
                         <li><a href="#">Track a order</a></li>
                         <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy policys</a></li>
+                        <li><a href="#">Privacy policies</a></li>
                     </ul>
                 </div>
                 <div class="about">
@@ -181,5 +181,15 @@
 
         </div>
     </footer>
+    <script>
+        document.getElementById("subscribeForm").addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById("subscribeForm").reset();
+        });
+        document.getElementById("searchForm").addEventListener('submit',function(event){
+            event.preventDefault();
+            document.getElementById("searchForm").reset();
+        })
+    </script>
 </body>
 </html>
