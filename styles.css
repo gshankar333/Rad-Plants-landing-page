@@ -124,7 +124,7 @@ main{
 }
 .imgBlock,.MobileimgBlock {
     /* width: 100%;  */
-    height: 55vh; 
+    height: 50vh; 
     background-color: #f0f0f0;
     background-image: url('/Assets/plants-homebanner.jpg'); 
     background-size: cover; 
@@ -491,7 +491,7 @@ footer{
         width:100%;
     }
     .plant-img{
-        height: 90vh !important;
+        
         width: 100% !important;
     }
     .featured-cards-section{
